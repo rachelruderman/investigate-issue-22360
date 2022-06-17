@@ -1,6 +1,4 @@
 /// <reference types="cypress" />
-describe('page', () => {
-  it('works', () => {
-    cy.visit('https://example.cypress.io')
-  })
+it('has experimentalInteractiveRunEvents set to true', () => {
+  expect(Cypress.config()).to.have.property('experimentalInteractiveRunEvents', true)
 })
